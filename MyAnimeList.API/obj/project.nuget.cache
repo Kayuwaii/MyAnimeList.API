@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "AP9cYx/IR+x/BX5J1Io7vM+yQGU6o60c3I2we6dXkIm+wBe+XtaU0NUcRVmX43b1zB9dJ15Uhs1I9eVveaLJOA==",
+  "success": true,
+  "projectFilePath": "D:\\Documentos\\MyAnimeList.API\\MyAnimeList.API\\MyAnimeList.API.csproj",
+  "expectedPackageFiles": [
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\alexcoratl\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
