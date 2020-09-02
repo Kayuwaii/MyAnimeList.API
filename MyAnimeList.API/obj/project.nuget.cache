@@ -1,10 +1,17 @@
 {
   "version": 2,
-  "dgSpecHash": "EzOUm9jtPByxvAp5+/OTFYHWHh8OUuAqJk06Jd3d8cz/8cw59IzMveAoMQnaeuUzeiyweD3CW4yEEu4ISwlEKw==",
+  "dgSpecHash": "AEPmw0eWp5bx4IQW0utCJromi8RmRfFQQaboNM4cjpC2CSsGA+FIxYGrjQOR9gOSSgIuubbUtKHDEWwpivcm5A==",
   "success": true,
   "projectFilePath": "D:\\Documentos\\MyAnimeList.API\\MyAnimeList.API\\MyAnimeList.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\alexcoratl\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problema al leer el archivo de caché D:\\Documentos\\MyAnimeList.API\\MyAnimeList.API\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }
