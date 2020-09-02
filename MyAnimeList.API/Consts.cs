@@ -10,4 +10,12 @@ namespace MyAnimeList.API
         public const string AuthToken = "https://myanimelist.net/v1/oauth2/";
         public const string AnimeList = "anime";
     }
+
+    internal enum Seasons
+    {
+        WINTER,
+        SPRING,
+        SUMMER,
+        FALL
+    }
 }
