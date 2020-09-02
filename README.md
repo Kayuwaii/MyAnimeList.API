@@ -49,4 +49,4 @@ I've tried my best to make it easy to use, here's an example where we manually p
             }
             
 ```
-
+More examples and better documentation will be added as more features are added.
