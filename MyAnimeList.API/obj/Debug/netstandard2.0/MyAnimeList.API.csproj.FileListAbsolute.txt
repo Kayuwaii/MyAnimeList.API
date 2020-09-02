@@ -1,0 +1,9 @@
+D:\Documentos\MyAnimeList.API\MyAnimeList.API\bin\Debug\netstandard2.0\MyAnimeList.API.deps.json
+D:\Documentos\MyAnimeList.API\MyAnimeList.API\bin\Debug\netstandard2.0\MyAnimeList.API.dll
+D:\Documentos\MyAnimeList.API\MyAnimeList.API\bin\Debug\netstandard2.0\MyAnimeList.API.pdb
+D:\Documentos\MyAnimeList.API\MyAnimeList.API\obj\Debug\netstandard2.0\MyAnimeList.API.csprojAssemblyReference.cache
+D:\Documentos\MyAnimeList.API\MyAnimeList.API\obj\Debug\netstandard2.0\MyAnimeList.API.csproj.CoreCompileInputs.cache
+D:\Documentos\MyAnimeList.API\MyAnimeList.API\obj\Debug\netstandard2.0\MyAnimeList.API.AssemblyInfoInputs.cache
+D:\Documentos\MyAnimeList.API\MyAnimeList.API\obj\Debug\netstandard2.0\MyAnimeList.API.AssemblyInfo.cs
+D:\Documentos\MyAnimeList.API\MyAnimeList.API\obj\Debug\netstandard2.0\MyAnimeList.API.dll
+D:\Documentos\MyAnimeList.API\MyAnimeList.API\obj\Debug\netstandard2.0\MyAnimeList.API.pdb
