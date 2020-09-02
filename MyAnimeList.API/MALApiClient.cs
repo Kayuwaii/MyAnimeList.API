@@ -31,11 +31,11 @@ namespace MyAnimeList.API
 
         public async void DoAuth(string code)
         {
-            var nvc = new Dictionary<string, string>();
-            nvc.Add("client_id", UserParams.ClientId);
-            nvc.Add("code", code);
-            nvc.Add("code_verifier", CodeVerifier);
-            nvc.Add("grant_type", "authorization_code");
+            var nvc = new List<KeyValuePair<string, string>>();
+            nvc.Add(new KeyValuePair<string, string>("client_id", UserParams.ClientId));
+            nvc.Add(new KeyValuePair<string, string>("code", code));
+            nvc.Add(new KeyValuePair<string, string>("code_verifier", CodeVerifier));
+            nvc.Add(new KeyValuePair<string, string>("grant_type", "authorization_code"));
 
             var req = new HttpRequestMessage(HttpMethod.Post, Consts.AuthToken + "token") { Content = new FormUrlEncodedContent(nvc) };
 

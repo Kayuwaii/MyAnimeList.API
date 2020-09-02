@@ -5,7 +5,9 @@ VisualStudioVersion = 16.0.29911.98
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyAnimeList.API", "MyAnimeList.API\MyAnimeList.API.csproj", "{78A0261E-0482-4A0F-AD87-C2A37E2D7545}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyAnimeList.APITests", "MyAnimeList.APITests\MyAnimeList.APITests.csproj", "{0CE7F11E-7BA0-41BF-9BD2-AB46352EDE05}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyAnimeList.APITests", "MyAnimeList.APITests\MyAnimeList.APITests.csproj", "{0CE7F11E-7BA0-41BF-9BD2-AB46352EDE05}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "test", "test\test.csproj", "{DE92C462-2395-438B-920F-E6CAEE994B25}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{0CE7F11E-7BA0-41BF-9BD2-AB46352EDE05}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0CE7F11E-7BA0-41BF-9BD2-AB46352EDE05}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0CE7F11E-7BA0-41BF-9BD2-AB46352EDE05}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE92C462-2395-438B-920F-E6CAEE994B25}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE92C462-2395-438B-920F-E6CAEE994B25}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE92C462-2395-438B-920F-E6CAEE994B25}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE92C462-2395-438B-920F-E6CAEE994B25}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
