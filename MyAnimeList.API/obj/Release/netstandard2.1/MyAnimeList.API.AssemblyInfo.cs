@@ -12,7 +12,7 @@ using System;
 using System.Reflection;
 
 [assembly: System.Reflection.AssemblyCompanyAttribute("Àlex Coronas")]
-[assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
+[assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyDescriptionAttribute("A simple .NET Standard wrapper for the new v2 API of MyAnimeList")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("0.1.1.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("0.1.1")]

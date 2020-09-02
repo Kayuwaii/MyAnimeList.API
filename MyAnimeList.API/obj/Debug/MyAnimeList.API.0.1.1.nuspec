@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>MyAnimeList.API</id>
+    <version>0.1.1</version>
+    <authors>Àlex Coronas</authors>
+    <owners>Àlex Coronas</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <icon>OK6W_koKDTOqqqLDbIoPAiC8a86sHufn_jOI-JGtoCQ.png</icon>
+    <projectUrl>https://github.com/Kayuwaii/MyAnimeList.API</projectUrl>
+    <description>A simple .NET Standard wrapper for the new v2 API of MyAnimeList</description>
+    <releaseNotes>Minor changes to documentation</releaseNotes>
+    <repository url="https://github.com/Kayuwaii/MyAnimeList.API" />
+    <dependencies>
+      <group targetFramework=".NETStandard2.1">
+        <dependency id="Newtonsoft.Json" version="12.0.3" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="D:\Documentos\MyAnimeList.API\MyAnimeList.API\bin\Debug\netstandard2.1\MyAnimeList.API.dll" target="lib\netstandard2.1\MyAnimeList.API.dll" />
+    <file src="E:\Descargas\OK6W_koKDTOqqqLDbIoPAiC8a86sHufn_jOI-JGtoCQ.png" target="OK6W_koKDTOqqqLDbIoPAiC8a86sHufn_jOI-JGtoCQ.png" />
+  </files>
+</package>
