@@ -12,9 +12,22 @@ namespace MyAnimeList.API.DTOs.Requests
         /// </summary>
         public string Search { get; set; } = String.Empty;
 
+        /// <summary>
+        /// Maximum amount of results returned. Defaults to 100. Maximum value 100.
+        /// </summary>
         public int Limit { get; set; } = 100;
 
+        /// <summary>
+        /// The amount of results to skip. Defaults to 0.
+        /// </summary>
         public int Offset { get; set; } = 0;
+
+        /// <summary>
+        /// An array containing the fields to be returned. Leave empty, for default fields.
+        /// </summary>
+        /// <remarks>
+        /// To use this property you must create a class that can map the new properties and use it in //TODO: Custom method.
+        /// </remarks>
         public string[] Fields { get; set; } = { };
 
         public string FormURL()
