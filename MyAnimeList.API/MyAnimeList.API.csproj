@@ -4,7 +4,7 @@
     <TargetFramework>netstandard2.1</TargetFramework>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <PackageRequireLicenseAcceptance>False</PackageRequireLicenseAcceptance>
-    <Version>0.1.1.1</Version>
+    <Version>0.1.2</Version>
     <Authors>Àlex Coronas</Authors>
     <Company>Àlex Coronas</Company>
     <RepositoryUrl>https://github.com/Kayuwaii/MyAnimeList.API</RepositoryUrl>
@@ -12,7 +12,7 @@
     <NeutralLanguage>en</NeutralLanguage>
     <Description>A simple .NET Standard wrapper for the new v2 API of MyAnimeList</Description>
     <PackageProjectUrl>https://github.com/Kayuwaii/MyAnimeList.API</PackageProjectUrl>
-    <PackageReleaseNotes>Minor changes to documentation</PackageReleaseNotes>
+    <PackageReleaseNotes>Added Token Refresh and seasonal query</PackageReleaseNotes>
     <Product>MyAnimeList.API</Product>
     <PackageId>MyAnimeList.API</PackageId>
     <PackageIconUrl>https://image.myanimelist.net/ui/OK6W_koKDTOqqqLDbIoPAiC8a86sHufn_jOI-JGtoCQ</PackageIconUrl>

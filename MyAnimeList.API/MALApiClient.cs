@@ -54,15 +54,58 @@ namespace MyAnimeList.API
         /// <summary>
         /// Returns a list of animes matching the provided string.
         /// </summary>
-        /// <returns>A <see cref="GetAnimeListResult"/> containing the list of Animes, with their Name, Id and picture URLs</returns>
-        public async Task<GetAnimeListResult> GetAnimeList(GetAnimeListRequest req)
+        /// <returns>A <see cref="AnimeListResult"/> containing the list of Animes, with their Name, Id and picture URLs</returns>
+        public async Task<AnimeListResult> GetAnimeList(GetAnimeListRequest req)
         {
-            GetAnimeListResult result;
+            AnimeListResult result;
 
             HttpResponseMessage response = await client.GetAsync(req.FormURL());
             if (response.IsSuccessStatusCode)
             {
-                result = await response.Content.ReadAsAsync<GetAnimeListResult>();//.ReadAsAsync<string>();
+                result = await response.Content.ReadAsAsync<AnimeListResult>();//.ReadAsAsync<string>();
+            }
+            else
+            {
+                switch (response.StatusCode)
+                {
+                    case HttpStatusCode.BadRequest:
+                        throw new MALAPIException("Invalid Parameters", response);
+                        break;
+
+                    case HttpStatusCode.Unauthorized:
+                        IsAuthenticated = false;
+                        IEnumerable<string> values;
+                        if (response.Headers.TryGetValues("WWW-Authenticate", out values))
+                        {
+                            string hdr = values.First();
+                            if (hdr.Contains("exprired"))
+                            {
+                                if (CanRenew) RenewAuth();
+                                else throw new MALAPIException("Unauthorized. Couldn't refresh the token automatically.", response);
+                            }
+                        }
+                        throw new MALAPIException("Unauthorized. Couldn't refresh the token automatically.", response);
+                        break;
+
+                    default:
+                        throw new MALAPIException(response);
+                }
+            }
+            return result;
+        }
+
+        /// <summary>
+        /// Returns a list of animes aired in the specified season.
+        /// </summary>
+        /// <returns>A <see cref="SeasonalAnimeListResult"/> containing the list of Animes, with their Name, Id and picture URLs</returns>
+        public async Task<AnimeListResult> GetSeasonalAnimeList(GetSeasonalAnimeListRequest req)
+        {
+            AnimeListResult result;
+
+            HttpResponseMessage response = await client.GetAsync(req.FormURL());
+            if (response.IsSuccessStatusCode)
+            {
+                result = await response.Content.ReadAsAsync<AnimeListResult>();//.ReadAsAsync<string>();
             }
             else
             {

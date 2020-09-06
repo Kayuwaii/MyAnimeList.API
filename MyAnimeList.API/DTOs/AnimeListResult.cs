@@ -4,7 +4,7 @@ using System.Text;
 
 namespace MyAnimeList.API.DTOs
 {
-    public class GetAnimeListResult : Base<GetAnimeListResultItem>
+    public class AnimeListResult : Base<AnimeListResultItem>
     {
     }
 }
