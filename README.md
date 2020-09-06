@@ -11,13 +11,15 @@ This library provides a client that manages Athentication, Requests and Response
 ## Current Features!
 
   - Authenticate aganist the API.
+  - Manual Token Refresh.
+  - Automatic Token Refresh.
   - Search Animes.
+  - Get Seasonal Animes.
 
 
 ## Future Features!
 Basically everything avaliable in the API, but the next ones to become avaliable will be:
   - Check Anime rankings.
-  - Check seasonal Anime.
   - Check individual Anime(Detailed).
   - Exception handling.
 
@@ -39,14 +41,39 @@ I've tried my best to make it easy to use, here's an example where we manually p
             string s = Console.ReadLine();//Input string to search
             GetAnimeListRequest xd = new GetAnimeListRequest // Create a request object, limit is the maximum amount of entries to obtain
             {
-                Search = s,
+                Search = "One",
                 Limit = 10
             };
-            var ls = client.GetAnimeList(xd).Result;
-            foreach (var item in ls.data)
+            Console.WriteLine("\n\n Test List:");
+            var lRes = test.GetAnimeList(xd).Result;
+            foreach (var item in lRes.data)
             {
-                Console.WriteLine("\t" + item.node.title); // Print Anime title
+                Console.WriteLine("\t" + item.node.title);
+            }
+
+            Console.WriteLine("\n\n Test Refresh Auth:");
+            test.RenewAuth();
+
+            xd.Search = "Souma";
+
+            lRes = test.GetAnimeList(xd).Result;
+            foreach (var item in lRes.data)
+            {
+                Console.WriteLine("\t" + item.node.title);
+            }
+
+            GetSeasonalAnimeListRequest s = new GetSeasonalAnimeListRequest
+            {
+                Season = Seasons.SUMMER,
+                Limit = 10
+            };
+            Console.WriteLine("\n\n Test SeasonList:");
+            var sRes = test.GetSeasonalAnimeList(s).Result;
+            foreach (var item in sRes.data)
+            {
+                Console.WriteLine("\t" + item.node.title);
             }
             
 ```
+This program ilustrates how to use the wrapper, but you can also use it to test if your API key or redirection url work properly, since it runs some methods automatically.
 More examples and better documentation will be added as more features are added.
