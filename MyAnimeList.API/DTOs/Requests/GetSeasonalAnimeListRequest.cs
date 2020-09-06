@@ -5,12 +5,17 @@ using System.Text;
 
 namespace MyAnimeList.API.DTOs.Requests
 {
-    public class GetAnimeListRequest : IURLRequestParams
+    public class GetSeasonalAnimeListRequest : IURLRequestParams
     {
         /// <summary>
-        /// The string to search with. Must be 3 characters or longer.
+        /// Gets or sets the year, defaults to the current year
         /// </summary>
-        public string Search { get; set; } = String.Empty;
+        public int Year { get; set; } = DateTime.Now.Year;
+
+        /// <summary>
+        /// Gets or sets the desired season
+        /// </summary>
+        public Seasons Season { get; set; } = Seasons.WINTER;
 
         /// <summary>
         /// Maximum amount of results returned. Defaults to 100. Maximum value 100.
@@ -30,9 +35,14 @@ namespace MyAnimeList.API.DTOs.Requests
         /// </remarks>
         public string[] Fields { get; set; } = { };
 
+        /// <summary>
+        /// Gets or sets the sorting field. Defaults to <see cref="SortBy.ANIME_SCORE"/>
+        /// </summary>
+        public SortBy Sort { get; set; } = SortBy.ANIME_SCORE;
+
         public string FormURL()
         {
-            string result = Consts.AnimeList + String.Format($"?q={Search}&limit={Limit}&offset={Offset}");
+            string result = Consts.SeasonalAnimeList + String.Format($"{Year}/{Season.Value()}?limit ={Limit}&offset={Offset}&sort={Sort.Value()}");
             if (Fields.Length > 0)
             {
                 StringBuilder sb = new StringBuilder();

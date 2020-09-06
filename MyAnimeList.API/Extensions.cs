@@ -11,5 +11,9 @@ namespace MyAnimeList.API
     {
         public static async Task<T> ReadAsAsync<T>(this HttpContent content) =>
              JsonConvert.DeserializeObject<T>(await content.ReadAsStringAsync());
+
+        public static string Value(this Seasons val) => Enum.GetNames(typeof(Seasons))[(int)val].ToLower();
+
+        public static string Value(this SortBy val) => Enum.GetNames(typeof(SortBy))[(int)val].ToLower();
     }
 }

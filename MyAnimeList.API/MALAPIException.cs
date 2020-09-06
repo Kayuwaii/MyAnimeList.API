@@ -18,6 +18,11 @@ namespace MyAnimeList.API
             this.response = response;
         }
 
+        public MALAPIException(string message, HttpResponseMessage response) : base(message)
+        {
+            this.response = response;
+        }
+
         public MALAPIException(string message) : base(message)
         {
         }

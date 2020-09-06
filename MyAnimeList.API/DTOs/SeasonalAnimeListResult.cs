@@ -4,7 +4,7 @@ using System.Text;
 
 namespace MyAnimeList.API.DTOs
 {
-    public class SeasonalAnimeListResult : GetAnimeListResult
+    public class SeasonalAnimeListResult : AnimeListResult
     {
         public Season Season { get; set; }
     }
