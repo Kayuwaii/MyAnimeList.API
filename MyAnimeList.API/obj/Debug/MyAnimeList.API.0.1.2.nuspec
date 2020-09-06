@@ -19,5 +19,6 @@
   </metadata>
   <files>
     <file src="D:\Documentos\MyAnimeList.API\MyAnimeList.API\bin\Debug\netstandard2.1\MyAnimeList.API.dll" target="lib\netstandard2.1\MyAnimeList.API.dll" />
+    <file src="D:\Documentos\MyAnimeList.API\MyAnimeList.API\bin\Debug\netstandard2.1\MyAnimeList.API.xml" target="lib\netstandard2.1\MyAnimeList.API.xml" />
   </files>
 </package>

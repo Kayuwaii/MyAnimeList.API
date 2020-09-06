@@ -20,6 +20,7 @@
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <PlatformTarget></PlatformTarget>
+    <DocumentationFile>D:\Documentos\MyAnimeList.API\MyAnimeList.API\MyAnimeList.API.xml</DocumentationFile>
   </PropertyGroup>
 
   <ItemGroup>
