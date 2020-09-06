@@ -1,5 +1,5 @@
 [![N|Solid](https://cdn.myanimelist.net/images/mal-logo-xsmall.png?v=180226001)](https://myanimelist.net)
-# MyAnimeList.API
+# MyAnimeList.API (Unofficial Wrapper)
 A simple .NET Standard wrapper for MAL's API v2. [![Nuget](https://img.shields.io/nuget/v/MyAnimeList.API?style=plastic)](https://www.nuget.org/packages/MyAnimeList.API/)
 
 This library provides a client that manages Athentication, Requests and Responses from the API, so that developers can interact with it easily. Authorization ***is not managed*** since each user should accept or decline on their own accord. However: 
