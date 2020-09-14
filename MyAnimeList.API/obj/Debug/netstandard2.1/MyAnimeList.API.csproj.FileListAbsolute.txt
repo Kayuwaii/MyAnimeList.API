@@ -7,3 +7,4 @@ D:\Documentos\MyAnimeList.API\MyAnimeList.API\obj\Debug\netstandard2.1\MyAnimeLi
 D:\Documentos\MyAnimeList.API\MyAnimeList.API\obj\Debug\netstandard2.1\MyAnimeList.API.dll
 D:\Documentos\MyAnimeList.API\MyAnimeList.API\obj\Debug\netstandard2.1\MyAnimeList.API.pdb
 D:\Documentos\MyAnimeList.API\MyAnimeList.API\obj\Debug\netstandard2.1\MyAnimeList.API.csprojAssemblyReference.cache
+D:\Documentos\MyAnimeList.API\MyAnimeList.API\bin\Debug\netstandard2.1\MyAnimeList.API.xml

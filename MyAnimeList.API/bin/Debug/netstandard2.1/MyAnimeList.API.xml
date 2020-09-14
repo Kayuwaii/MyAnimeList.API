@@ -1,0 +1,109 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MyAnimeList.API</name>
+    </assembly>
+    <members>
+        <member name="P:MyAnimeList.API.DTOs.Requests.GetAnimeListRequest.Search">
+            <summary>
+            The string to search with. Must be 3 characters or longer.
+            </summary>
+        </member>
+        <member name="P:MyAnimeList.API.DTOs.Requests.GetAnimeListRequest.Limit">
+            <summary>
+            Maximum amount of results returned. Defaults to 100. Maximum value 100.
+            </summary>
+        </member>
+        <member name="P:MyAnimeList.API.DTOs.Requests.GetAnimeListRequest.Offset">
+            <summary>
+            The amount of results to skip. Defaults to 0.
+            </summary>
+        </member>
+        <member name="P:MyAnimeList.API.DTOs.Requests.GetAnimeListRequest.Fields">
+            <summary>
+            An array containing the fields to be returned. Leave empty, for default fields.
+            </summary>
+            <remarks>
+            To use this property you must create a class that can map the new properties and use it in //TODO: Custom method.
+            </remarks>
+        </member>
+        <member name="P:MyAnimeList.API.DTOs.Requests.GetSeasonalAnimeListRequest.Year">
+            <summary>
+            Gets or sets the year, defaults to the current year
+            </summary>
+        </member>
+        <member name="P:MyAnimeList.API.DTOs.Requests.GetSeasonalAnimeListRequest.Season">
+            <summary>
+            Gets or sets the desired season
+            </summary>
+        </member>
+        <member name="P:MyAnimeList.API.DTOs.Requests.GetSeasonalAnimeListRequest.Limit">
+            <summary>
+            Maximum amount of results returned. Defaults to 100. Maximum value 100.
+            </summary>
+        </member>
+        <member name="P:MyAnimeList.API.DTOs.Requests.GetSeasonalAnimeListRequest.Offset">
+            <summary>
+            The amount of results to skip. Defaults to 0.
+            </summary>
+        </member>
+        <member name="P:MyAnimeList.API.DTOs.Requests.GetSeasonalAnimeListRequest.Fields">
+            <summary>
+            An array containing the fields to be returned. Leave empty, for default fields.
+            </summary>
+            <remarks>
+            To use this property you must create a class that can map the new properties and use it in //TODO: Custom method.
+            </remarks>
+        </member>
+        <member name="P:MyAnimeList.API.DTOs.Requests.GetSeasonalAnimeListRequest.Sort">
+            <summary>
+            Gets or sets the sorting field. Defaults to <see cref="F:MyAnimeList.API.SortBy.ANIME_SCORE"/>
+            </summary>
+        </member>
+        <member name="T:MyAnimeList.API.MALApiClient">
+            <summary>
+            Simple client to interact with MAL's API, requests are asyncronous.
+            </summary>
+        </member>
+        <member name="P:MyAnimeList.API.MALApiClient.IsAuthenticated">
+            <summary>
+            Gets a value indicating whether the client is currently authenticated,
+            </summary>
+        </member>
+        <member name="M:MyAnimeList.API.MALApiClient.#ctor(MyAnimeList.API.UserParams)">
+            <summary>
+            Creates a new instance of the API Client.
+            </summary>
+            <param name="Params">s asd asd asd</param>
+        </member>
+        <member name="M:MyAnimeList.API.MALApiClient.GetAnimeList(MyAnimeList.API.DTOs.Requests.GetAnimeListRequest)">
+            <summary>
+            Returns a list of animes matching the provided string.
+            </summary>
+            <returns>A <see cref="T:MyAnimeList.API.DTOs.AnimeListResult"/> containing the list of Animes, with their Name, Id and picture URLs</returns>
+        </member>
+        <member name="M:MyAnimeList.API.MALApiClient.GetSeasonalAnimeList(MyAnimeList.API.DTOs.Requests.GetSeasonalAnimeListRequest)">
+            <summary>
+            Returns a list of animes aired in the specified season.
+            </summary>
+            <returns>A <see cref="T:MyAnimeList.API.DTOs.SeasonalAnimeListResult"/> containing the list of Animes, with their Name, Id and picture URLs</returns>
+        </member>
+        <member name="P:MyAnimeList.API.UserParams.ClientId">
+             <summary>
+             The ClientId obtained from MyAnimeList.
+            
+             To register a new App and obtain a ClientId, visit <a href="https://myanimelist.net/apiconfig">MyAnimeList</a>
+             </summary>
+        </member>
+        <member name="P:MyAnimeList.API.UserParams.OAuth2State">
+            <summary>
+            An opaque value used by the client to maintain state between the request and callback.
+            </summary>
+        </member>
+        <member name="P:MyAnimeList.API.UserParams.RedirectURI">
+            <summary>
+            This is the URI the user will be redirected after allowing the API usage, must mutch one of the URLs you provided when applying for an API key. By default it points http://localhost. But it's recomended to change this to a web service that will process the URL.
+            </summary>
+        </member>
+    </members>
+</doc>
