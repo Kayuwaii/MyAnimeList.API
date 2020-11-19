@@ -9,6 +9,12 @@ namespace MyAnimeList.API
 {
     public static class Extensions
     {
+        /// <summary>
+        /// Returns a given <see cref="HttpContent"/>content as
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="content"></param>
+        /// <returns></returns>
         public static async Task<T> ReadAsAsync<T>(this HttpContent content) =>
              JsonConvert.DeserializeObject<T>(await content.ReadAsStringAsync());
 
